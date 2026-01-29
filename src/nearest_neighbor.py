@@ -109,14 +109,15 @@ def nearest_neighbor(cities, start):
 
 
 if __name__ == "__main__":
-    cities = read_cities("usa13509.tsp")
+    cities = read_cities("data/usa13509.tsp")
     print("Number of cities:", len(cities))
 
     starts = select_diverse_starts(cities, 25)
 
-    with open("nearest_neighbor_tours.txt", "w") as f:
+    with open("results/nearest_neighbor_tours.txt", "w") as f:
         for i, start in enumerate(starts):
             NN = nearest_neighbor(cities, start)
             f.write(f"Tour {i} (start: {start})\n")
             f.write(f"Distance: {NN[1]}\n\n")
+
             f.write(f"{NN[0]}\n\n")
