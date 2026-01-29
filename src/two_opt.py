@@ -127,8 +127,8 @@ def two_opt_best_improvement(cities, tour, tour_length, max_passes):
 
 
 if __name__ == "__main__":
-    cities = read_cities("usa13509.tsp")
-    best_NN_tours = get_best_NN_tours("nearest_neighbor_tours.txt", 1)
+    cities = read_cities("data/usa13509.tsp")
+    get_best_NN_tours("results/nearest_neighbor_tours.txt", 10)
 
     min_length = float("inf")
     best_tour = None
@@ -136,7 +136,7 @@ if __name__ == "__main__":
 
     for i, tour in enumerate(best_NN_tours):
         print(f"Analyzing Best Tour {i}")
-        two_opt_tour = two_opt_best_improvement(cities, tour["tour"], tour["distance"], 50)
+        two_opt_tour = two_opt_best_improvement(cities, tour["tour"], tour["distance"], 5)
 
         if two_opt_tour[1] < min_length:
             best_tour_idx = tour["tour_index"]
@@ -145,5 +145,6 @@ if __name__ == "__main__":
 
     print(f"Best tour after 2-opt (Tour {best_tour_idx}): ", best_tour)
     print("Distance: ", min_length)
+
 
 
