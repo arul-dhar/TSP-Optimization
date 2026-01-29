@@ -6,7 +6,7 @@ This repository contains my ISEN 320 (Operations Research I) final project imple
 2) **Multi-start initialization** to reduce dependence on starting city  
 3) **2-opt (best-improvement)** local search applied to top NN tours with a pass cap to control runtime  
 
-The full report is included in [Final Report](docs/ISEN_320_Final_Project_Report.pdf).
+The full report is included in [Final Report](docs/ISEN 320 Final Project.pdf).
 
 ## Repo Structure
 - src/ Python source code
