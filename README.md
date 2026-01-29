@@ -6,13 +6,13 @@ This repository contains my ISEN 320 (Operations Research I) final project imple
 2) **Multi-start initialization** to reduce dependence on starting city  
 3) **2-opt (best-improvement)** local search applied to top NN tours with a pass cap to control runtime  
 
-The full report is included in `docs/ISEN_320_Final_Project_Report.pdf`.
+The full report is included in [Final Report](docs/ISEN_320_Final_Project_Report.pdf).
 
 ## Repo Structure
-src/ Python source code
-data/ Input dataset(s)
-results/ Output files (tours, best tour, etc.)
-docs/ Project report PDF
+- src/ Python source code
+- data/ Input dataset(s)
+- results/ Output files (tours, best tour, etc.)
+- docs/ Project report PDF
 
 ## Quick Start
 
@@ -47,8 +47,8 @@ To avoid a single-start bias without running NN from every city, the pipeline us
 ## Report
 See `docs/ISEN_320_Final_Project_Report.pdf` for:
 
-TSP formulation as a Binary Integer Program (decision variables, constraints, subtour elimination)
-Branch-and-bound (exact approach overview)
-Heuristic design rationale and complexity discussion
-Implementation details and results
+- TSP formulation as a Binary Integer Program (decision variables, constraints, subtour elimination)
+- Branch-and-bound (exact approach overview)
+- Heuristic design rationale and complexity discussion
+- Implementation details and results
 
