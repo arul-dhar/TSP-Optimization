@@ -18,10 +18,12 @@ The full report is included in [Final Report](docs/ISEN_320_Final_Project.pdf).
 
 ### Run the full pipeline (recommended)
 From the repository root:
+
 python src/run_pipeline.py
 
 ### Run steps manually (optional)
 python src/nearest_neighbor.py
+
 python src/two_opt.py
 
 ## Inputs / Outputs
@@ -31,6 +33,7 @@ data/usa13509.tsp — 13,509-city coordinate dataset
 
 ### Outputs
 results/nearest_neighbor_tours.txt — NN tours generated from multiple starting cities with their total lengths
+
 results/best_tour_found.txt — best tour found after applying 2-opt to selected NN tours
 
 ## Algorithm Overview
