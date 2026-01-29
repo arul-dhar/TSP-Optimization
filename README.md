@@ -6,7 +6,7 @@ This repository contains my ISEN 320 (Operations Research I) final project imple
 2) **Multi-start initialization** to reduce dependence on starting city  
 3) **2-opt (best-improvement)** local search applied to top NN tours with a pass cap to control runtime  
 
-The full report is included in [Final Report](docs/ISEN 320 Final Project.pdf).
+The full report is included in [Final Report](docs/ISEN_320_Final_Project.pdf).
 
 ## Repo Structure
 - src/ Python source code
@@ -45,7 +45,7 @@ To avoid a single-start bias without running NN from every city, the pipeline us
 2-opt iteratively improves a tour by swapping two edges (reversing a segment) when it reduces total distance. A maximum number of passes is used to keep runtime manageable on large instances.
 
 ## Report
-See `docs/ISEN_320_Final_Project_Report.pdf` for:
+See `docs/ISEN_320_Final_Project.pdf` for:
 
 - TSP formulation as a Binary Integer Program (decision variables, constraints, subtour elimination)
 - Branch-and-bound (exact approach overview)
